@@ -1,0 +1,113 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/img/logo.png">
+    <title>Hora Preciosa</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/ico" href="img/favicon.ico">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg">
+  <div class="container">
+
+    <a class="navbar-brand" href="http://imersao.mamaedicas.com.br">
+        <img src="img/logo.png" alt="Logo" style="height:30px;">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+    </div>
+  </div>
+</nav>
+<main>
+    <div class="container">
+        <br>
+        <img src="img/logoimersao.png" alt="Logo" style="height:80px;">
+    </div>    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="card active" id="vida-atual">
+                    <div class="card-body">
+                        <p><strong>Você acha que é possível ganhar uma renda extra como afiliada da Amazon?</strong></p>
+                        <p>Calcule e descubra agora quantos produtos você precisa vender para conseguir uma renda extra ou até mesmo sua independência financeira.</p>
+                        <br>
+                        <h2 class="card-title vida-atual">QUANTO VOCÊ GOSTARIA DE GANHAR?</h2>
+                        <br>
+                        <form>
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <input type="range" id="renda-desejada" class="form-control-range" min="0" step="100"  max="10000" value="0">
+                                    <p id="tempo-producao-display">0 reais</p>
+                                </div>
+                            </div>
+                            <br>
+                            <button type="button" id="avancar" class="btn btn-primary">prosseguir</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="nicho">
+                <div class="card-body">
+                    <h2 class="hora-vale">Que tipo de produto gostaria de vender?</h2> 
+                    <br>
+                    <form id="form-nicho">
+                        <div class="form-group">
+                            <label for="nicho">Selecione o nicho:</label>
+                            <select class="form-control" id="nicho-dropdown"></select>
+                        </div>
+                        <button type="button" id="confirmar-nicho" class="btn btn-primary">Confirmar</button>
+                    </form>
+                    <div id="confirmacao-nicho" style="display: none;">
+                        <p id="quer-saber">Quer saber o que você precisa fazer para ganhar o que gostaria vendendo produtos do nicho <span id="nicho-selecionado"></span>? </p>
+                        <button id="prosseguir-2" class="btn btn-secondary">sim</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12">
+                <div class="card" id="vida-almejada">
+                    <div class="card-body">
+                        <h2 class="card-title vida-desejada">O QUE VOCÊ PRECISA FAZER</h2>
+                        <br>
+                        <div id="result" class="mt-4"></div>
+                        <H3>Quer aprender como conseguir essa renda?</H3>
+                        <button id="quero-aprender" class="btn btn-secondary">sim</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <div class="card" id="inscreva-se">
+                    <div class="card-body">
+                        <h2 class="card-title valor-desejada-hora">IMERSÃO AMAZON COM LIVIA VILELA</h2>
+                        <br>
+                        <P>Estão abertas as pré-inscrições para a Imersão Amazon! Eu vou te contar como foi a minha jornada e tudo que eu fiz de certo e errado até me tornar uma das maiores associadas da Amazon no nicho infantil.</p>
+                        </p>
+                    </div>
+                    <br>
+                    <a id="clique-inscrever" class="btn btn-primary" href="http://imersao.mamaedicas.com.br/leads" target="_blank">CLIQUE AQUI PARA SE INSCREVER</a>                    <br>
+                </div>
+            </div>   
+        </div>
+    </div>
+</main>      
+    <footer>
+        <div class="navigation-buttons">
+            <button class="btn btn-back" id="voltar"></button>
+            <button class="btn btn-home" id="home-btn"></button>
+            <button class="btn btn-front" id="prosseguir"></button>
+        </div>
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/instamamaedicas" target="_blank"><img src="img/instagram.png"></a>
+            <a href="https://wa.me/5521992162678" target="_blank"><img src="img/whatsapp.png"></a>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>    
+</body>
+</html>
