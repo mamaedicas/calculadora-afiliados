@@ -236,25 +236,23 @@ input[type=range] {
     background: #afc7e9; /* Define a cor da barra do range */
 }
 
+/* Estilo para Chrome, Safari, Edge */
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 50px; /* Ajuste conforme o tamanho da sua imagem */
-    height: 50px; /* Ajuste conforme o tamanho da sua imagem */
+    width: 60px; /* Aumentado de 20px para 30px */
+    height: 60px; /* Aumentado de 20px para 30px */
     background: url('img/estrela.png') no-repeat center;
     border: none; /* Removendo a borda branca */
-    margin-top: -10px; /* Ajuste conforme necessário */
-    z-index: 2;
+    margin-top: -40px; /* Metade da diferença de tamanho para centralizar */
 }
 
 /* Estilo para Firefox */
 input[type=range]::-moz-range-thumb {
-    width: 50px; /* Ajuste conforme o tamanho da sua imagem */
-    height: 50px; /* Ajuste conforme o tamanho da sua imagem */
+    width: 60px; /* Aumentado de 20px para 30px */
+    height: 60px; /* Aumentado de 20px para 30px */
     background: url('img/estrela.png') no-repeat center;
     border: none; /* Removendo a borda branca */
-    margin-top: -10px; /* Ajuste conforme necessário */
-    z-index: 2;
 }
 
 input[type=range]::-moz-range-track {
