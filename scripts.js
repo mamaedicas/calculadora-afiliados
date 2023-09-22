@@ -95,7 +95,7 @@ const categorias = {
     "Câmera e fotografia": { "comissao": 0.09, "valor": 4000, "produto": "Canon EOS Rebel T7i" },
     "Casa": { "comissao": 0.09, "valor": 500, "produto": "Jogo de Panelas Tramontina" },
     "Celulares": { "comissao": 0.07, "valor": 8200, "produto": "iPhone 14" },
-    "Comidas e bebidas": { "comissao": 0.13, "valor": 120, "produto": "Kit de Cervejas Artesanais" },
+    "Comidas e bebidas": { "comissao": 0.13, "valor": 12, "produto": "Macarrão Barilla" },
     "Cozinha": { "comissao": 0.09, "valor": 400, "produto": "Panela de Pressão Elétrica Philips Walita" },
     "Dispositivos Amazon": { "comissao": 0.15, "valor": 408, "produto": "Amazon Echo" },
     "Eletrodomésticos de linha branca": { "comissao": 0.08, "valor": 2500, "produto": "Geladeira Brastemp Frost Free Duplex" },
@@ -111,10 +111,10 @@ const categorias = {
     "PC": { "comissao": 0.09, "valor": 4000, "produto": "Notebook Dell Inspiron" },
     "Peças e acessórios automotivos": { "comissao": 0.10, "valor": 400, "produto": "Bateria Moura 60Ah" },
     "Pet Shop": { "comissao": 0.13, "valor": 200, "produto": "Ração Royal Canin para Cães" },
-    "Produtos para bebês": { "comissao": 0.13, "valor": 600, "produto": "Carrinho de Bebê Burigotto" },
+    "Produtos para bebês": { "comissao": 0.13, "valor": 1000, "produto": "Cadeirinha Fisher Price" },
     "Relógios": { "comissao": 0.13, "valor": 500, "produto": "Relógio Casio G-Shock" },
     "Roupas e acessórios": { "comissao": 0.13, "valor": 400, "produto": "Jaqueta Levi's Masculina" },
-    "Saúde e cuidados pessoais": { "comissao": 0.13, "valor": 250, "produto": "Kit Multigroom Philips" },
+    "Saúde e cuidados pessoais": { "comissao": 0.13, "valor": 150, "produto": "Fralda Pants Pampers Premium Care" },
     "TV, áudio e cinema em casa": { "comissao": 0.09, "valor": 2500, "produto": "Smart TV Samsung 50\" 4K" },
     "Videogames e consoles": { "comissao": 0.08, "valor": 5000, "produto": "PlayStation 5" }
 };
