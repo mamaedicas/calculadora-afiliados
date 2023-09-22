@@ -25,7 +25,8 @@ $(document).ready(function() {
     }
 
     $('#renda-desejada').on('input', function() {
-        $('#tempo-producao-display').text($(this).val() + ',00 reais');
+        let valor = parseInt($(this).val()).toLocaleString('pt-BR');
+        $('#tempo-producao-display').text(valor + ' reais');
     });
 
     $('#prosseguir').click(function() {
@@ -69,17 +70,12 @@ $(document).ready(function() {
 
 
 
-    $('#prosseguir-2').click(function() {
-        const nichoSelecionado = $('#nicho-dropdown').val();
-        const rendaMensal = parseFloat($('#renda-desejada').val()) || 1000;
-    
-        const categoria = categorias[nichoSelecionado];
-        const comissaoPorProduto = categoria.valor * categoria.comissao;
-        const quantidadeNecessaria = Math.ceil(rendaMensal / comissaoPorProduto);
-        const valorTotalNecessario = quantidadeNecessaria * categoria.valor;
-    
-        $('#result').html(`Para ter uma renda mensal de R$${rendaMensal.toFixed(2)}, você precisará vender o equivalente a R$${valorTotalNecessario.toFixed(2)}, ou ${quantidadeNecessaria} ${categoria.produto} por mês.`);
-    });
+$('#prosseguir-2').click(function() {
+    // ... código anterior ...
+    let rendaFormatada = parseInt(rendaMensal).toLocaleString('pt-BR');
+    let valorTotalFormatado = parseInt(valorTotalNecessario).toLocaleString('pt-BR');
+    $('#result').html(`Para ter uma renda mensal de R$${rendaFormatada}, você precisará vender o equivalente a R$${valorTotalFormatado}, ou ${quantidadeNecessaria} unidades de  ${categoria.produto} por mês.`);
+});
 
 
     // Mostrar o primeiro card ao carregar a página
