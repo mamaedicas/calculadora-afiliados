@@ -244,7 +244,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 60px; /* Aumentado de 20px para 30px */
     background: url('img/estrela.png') no-repeat center;
     border: none; /* Removendo a borda branca */
-    margin-top: -30px; /* Metade da diferença de tamanho para centralizar */
+    margin-top: -35px; /* Metade da diferença de tamanho para centralizar */
 }
 
 /* Estilo para Firefox */
