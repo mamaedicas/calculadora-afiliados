@@ -236,7 +236,6 @@ input[type=range] {
     background: #afc7e9; /* Define a cor da barra do range */
 }
 
-/* Estilo para Chrome, Safari, Edge */
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -244,7 +243,8 @@ input[type=range]::-webkit-slider-thumb {
     height: 20px; /* Ajuste conforme o tamanho da sua imagem */
     background: url('img/estrela.png') no-repeat center;
     border: none; /* Removendo a borda branca */
-    cursor: pointer;
+    margin-top: -10px; /* Ajuste conforme necessário */
+    z-index: 2;
 }
 
 /* Estilo para Firefox */
@@ -253,7 +253,8 @@ input[type=range]::-moz-range-thumb {
     height: 20px; /* Ajuste conforme o tamanho da sua imagem */
     background: url('img/estrela.png') no-repeat center;
     border: none; /* Removendo a borda branca */
-    cursor: pointer;
+    margin-top: -10px; /* Ajuste conforme necessário */
+    z-index: 2;
 }
 
 input[type=range]::-moz-range-track {
