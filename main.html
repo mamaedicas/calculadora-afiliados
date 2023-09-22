@@ -55,10 +55,14 @@
                         <br>
                         <h2 class="card-title vida-atual">QUANTO VOCÊ GOSTARIA DE GANHAR POR MÊS?</h2>
                         <br>
-                         <p>
-                            <div style="display: inline-block;"><img src="img/arrasta.png" alt="Arrasta" style="width: 60px; vertical-align: middle;"></div>
-                            <div style="display: inline-block; vertical-align: middle;">Arraste a estrela pra mudar o valor.</div>
-                        </p>
+                        <div class="row">
+                            <div class="col-6 text-right">
+                                <img src="img/arrasta.png" alt="Arrasta" style="width: 60px;">
+                            </div>
+                            <div class="col-6 text-left">
+                                Arraste a estrela pra mudar o valor.
+                            </div>
+                        </div>
                         <form>
                             <div class="form-group row">
                                 <div class="col-sm-12">
@@ -119,16 +123,23 @@
     </div>
 </main>      
 <footer>
-    <div class="navigation-buttons">
-        <button class="btn btn-back" id="voltar"></button>
-        <button class="btn btn-home" id="home-btn"></button>
-        <button class="btn btn-front" id="prosseguir"></button>
-    </div>
-    <div class="social-buttons">
-        <a href="https://www.instagram.com/instamamaedicas" target="_blank"><img src="img/instagram.png"></a>
-        <a href="https://wa.me/5521992162678" target="_blank"><img src="img/whatsapp.png"></a>
+    <div class="row">
+        <div class="col-6">
+            <div class="navigation-buttons">
+                <button class="btn btn-back" id="voltar"></button>
+                <button class="btn btn-home" id="home-btn"></button>
+                <button class="btn btn-front" id="prosseguir"></button>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="social-buttons">
+                <a href="https://www.instagram.com/instamamaedicas" target="_blank"><img src="img/instagram.png"></a>
+                <a href="https://wa.me/5521992162678" target="_blank"><img src="img/whatsapp.png"></a>
+            </div>
+        </div>
     </div>
 </footer>
+
 
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
