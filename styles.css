@@ -92,11 +92,12 @@ main {
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Alinha verticalmente */
     padding: 20px;
     background-color: #ffffff;
     color: white;
 }
+
 .social-buttons {
     display: flex;
     justify-content: center;
