@@ -244,6 +244,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 20px; /* Ajuste conforme o tamanho da sua imagem */
     background: url('img/estrela.png') no-repeat center;
     border: none; /* Removendo a borda branca */
+    cursor: pointer;
 }
 
 /* Estilo para Firefox */
@@ -252,6 +253,7 @@ input[type=range]::-moz-range-thumb {
     height: 20px; /* Ajuste conforme o tamanho da sua imagem */
     background: url('img/estrela.png') no-repeat center;
     border: none; /* Removendo a borda branca */
+    cursor: pointer;
 }
 
 input[type=range]::-moz-range-track {
