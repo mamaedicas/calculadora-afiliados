@@ -240,11 +240,11 @@ input[type=range] {
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 60px; /* Aumentado de 20px para 30px */
-    height: 60px; /* Aumentado de 20px para 30px */
+    width: 30px; /* Aumentado de 20px para 30px */
+    height: 30px; /* Aumentado de 20px para 30px */
     background: url('img/estrela.png') no-repeat center;
     border: none; /* Removendo a borda branca */
-    margin-top: -35px; /* Metade da diferença de tamanho para centralizar */
+    margin-top: -10px; /* Metade da diferença de tamanho para centralizar */
 }
 
 /* Estilo para Firefox */
