@@ -83,7 +83,6 @@ $(document).ready(function() {
         $('#result').html(`Para ter uma renda mensal de R$${rendaFormatada}, você precisará vender o equivalente a R$${valorTotalFormatado}, ou ${quantidadeNecessaria} unidades de ${categoria.produto} por mês.`);
     });
 
-
     // Mostrar o primeiro card ao carregar a página
     mostrarCard('vida-atual');
 });
