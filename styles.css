@@ -1,4 +1,4 @@
-h1, h2, h3 {
+sh1, h2, h3 {
     font-family: 'Montserrar', sans-serif;
     text-align: center;
 }
@@ -235,20 +235,21 @@ input[type=range] {
     background: #afc7e9; /* Define a cor da barra do range */
   }
   
-  input[type=range]::-webkit-slider-runnable-track,
-  input[type=range]::-moz-range-track {
-    background: #afc7e9; /* Cor de fundo da trilha */
-  }
-  
-  input[type=range]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
-    background: #ea617a; /* Cor de fundo do círculo */
-    border: 5px solid white; /* Borda branca do círculo */
-    border-radius: 50%;
-  }
+    width: 20px; /* Ajuste conforme o tamanho da sua imagem */
+    height: 20px; /* Ajuste conforme o tamanho da sua imagem */
+    background: url('img/estrela.png') no-repeat center;
+    border: none; /* Removendo a borda branca */
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 20px; /* Ajuste conforme o tamanho da sua imagem */
+    height: 20px; /* Ajuste conforme o tamanho da sua imagem */
+    background: url('img/estrela.png') no-repeat center;
+    border: none; /* Removendo a borda branca */
+}
   
   input[type=range]::-moz-range-thumb {
     width: 20px;
@@ -257,7 +258,11 @@ input[type=range] {
     border: 2px solid white; /* Borda branca do círculo */
     border-radius: 50%;
   }
-  
+
+input[type=range]::-moz-range-track {
+    background: #afc7e9; /* Cor de fundo da trilha */
+}
+
   /* Estilo para Firefox - Cor da progressão */
   input[type=range]::-moz-range-progress {
     background: #ea617a;
