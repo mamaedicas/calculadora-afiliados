@@ -76,10 +76,11 @@ $(document).ready(function() {
         const categoria = categorias[nichoSelecionado];
         const comissaoPorProduto = categoria.valor * categoria.comissao;
         const quantidadeNecessaria = Math.ceil(rendaMensal / comissaoPorProduto);
+        const valorTotalNecessario = quantidadeNecessaria * categoria.valor;
     
-        $('#result').html(`Para ter uma renda mensal de R$${rendaMensal.toFixed(2)}, você precisará vender ${quantidadeNecessaria} ${categoria.produto} por mês.`);
-        
+        $('#result').html(`Para ter uma renda mensal de R$${rendaMensal.toFixed(2)}, você precisará vender o equivalente a R$${valorTotalNecessario.toFixed(2)}, ou ${quantidadeNecessaria} ${categoria.produto} por mês.`);
     });
+
 
     // Mostrar o primeiro card ao carregar a página
     mostrarCard('vida-atual');
@@ -88,7 +89,6 @@ $(document).ready(function() {
 
 const categorias = {
     "Beleza": { "comissao": 0.15, "valor": 500, "produto": "Perfume Chanel No. 5" },
-    "Bicicleta Caloi Aro 29": { "comissao": 0.08, "valor": 1500, "produto": "Bicicleta Caloi Aro 29" },
     "Bolsas, Malas e Mochilas": { "comissao": 0.13, "valor": 800, "produto": "Mala Samsonite Grande" },
     "Brinquedos e jogos": { "comissao": 0.09, "valor": 300, "produto": "LEGO Super Mario" },
     "Calçados, bolsas e óculos escuros": { "comissao": 0.13, "valor": 500, "produto": "Tênis Nike Air Max" },
