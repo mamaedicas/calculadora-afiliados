@@ -253,6 +253,7 @@ input[type=range]::-moz-range-thumb {
     background: url('img/estrela.png') no-repeat center;
     border: none; /* Removendo a borda branca */
 }
+
 input[type=range]::-moz-range-track {
     background: #afc7e9; /* Cor de fundo da trilha */
 }
@@ -261,8 +262,6 @@ input[type=range]::-moz-range-track {
 input[type=range]::-moz-range-progress {
     background: #ea617a;
 }
-
-
   #nicho {
     display: block;
     width: 100%;
